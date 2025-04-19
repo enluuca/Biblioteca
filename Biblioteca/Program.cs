@@ -39,7 +39,7 @@ namespace GestionBiblioteca
                 Console.WriteLine("No se pudo eliminar.");
             }
 
-            // Listamos nuevamente
+            
             Console.WriteLine("\n📚 Lista actualizada de libros:");
             miBiblioteca.ListarLibros();
         }
