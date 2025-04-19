@@ -25,7 +25,7 @@ namespace GestionBiblioteca
             {
                 if (libro.Titulo.Equals(titulo, StringComparison.OrdinalIgnoreCase))
                 {
-                    return false; //Libro existente}
+                    return false; //Libro existente
                 }
             }
             //si no existe, se agrega
@@ -66,7 +66,6 @@ namespace GestionBiblioteca
             if (libros.Count == 0)
             {
                 Console.WriteLine("No hay libros");
-
             }
             else
             {

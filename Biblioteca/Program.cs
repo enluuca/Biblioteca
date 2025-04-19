@@ -8,16 +8,18 @@ namespace GestionBiblioteca
         {
             Biblioteca miBiblioteca = new Biblioteca();
 
-            // Agregamos algunos libros
+            // Agregarmos libros con el constructor
             miBiblioteca.AgregarLibro("Cien Años de Soledad", "Gabriel García Márquez", "Sudamericana");
             miBiblioteca.AgregarLibro("El Principito", "Antoine de Saint-Exupéry", "Emecé");
+            miBiblioteca.AgregarLibro("It", "Stephen King", "Viking Press");
+            miBiblioteca.AgregarLibro("Don Quijote de la Mancha", "Miguel de Cervantes", "Francisco de Robles");
 
             // Listamos los libros
-            Console.WriteLine("📚 Lista de libros:");
+            Console.WriteLine("Lista de libros:");
             miBiblioteca.ListarLibros();
 
             // Buscamos un libro
-            Console.WriteLine("\n🔍 Buscando 'El Principito':");
+            Console.WriteLine("Buscando 'El Principito':");
             var libro = miBiblioteca.BuscarLibro("El Principito");
             if (libro != null)
             {
@@ -29,7 +31,7 @@ namespace GestionBiblioteca
             }
 
             // Eliminamos un libro
-            Console.WriteLine("\n🗑 Eliminando 'Cien Años de Soledad'");
+            Console.WriteLine("Eliminando 'Cien Años de Soledad'");
             if (miBiblioteca.EliminarLibro("Cien Años de Soledad"))
             {
                 Console.WriteLine("Eliminado con éxito.");
@@ -39,8 +41,8 @@ namespace GestionBiblioteca
                 Console.WriteLine("No se pudo eliminar.");
             }
 
-            
-            Console.WriteLine("\n📚 Lista actualizada de libros:");
+            // Listamos nuevamente
+            Console.WriteLine("Lista actualizada de libros:");
             miBiblioteca.ListarLibros();
         }
     }

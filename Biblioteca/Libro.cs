@@ -12,19 +12,13 @@ namespace GestionBiblioteca
         public string Autor { get; set; }
         public string Editorial { get; set; }
 
-        //Construtor
-        public Libro(string titulo, string autor, string editorial) { 
-        
+        //Construtor para libros
+        public Libro(string titulo, string autor, string editorial)
+        {
             Titulo = titulo;
             Autor = autor;
             Editorial = editorial;
         }
-
-
     }
-
-
-
-
 
 }
