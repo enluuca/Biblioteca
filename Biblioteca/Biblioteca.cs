@@ -82,7 +82,6 @@ namespace GestionBiblioteca
                 }
             }
         }
-
         //Método para dar de alta un lector
         public bool AltaLector (string nombre,  string dni)
         {
